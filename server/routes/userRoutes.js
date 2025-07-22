@@ -2,7 +2,7 @@
 
 import express from 'express';
 const router = express.Router();
-const { registerUser, loginUser } = require('../controllers/userController');
+import { registerUser, loginUser } from '../controllers/userController.js';
 
 // Route for /api/users/register
 router.post('/register', registerUser);
